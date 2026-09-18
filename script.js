@@ -124,3 +124,69 @@ function typeText() {
 
 
 typeText();
+
+/* =========================
+   PROJECT IMAGE POPUP
+========================= */
+
+const projectImages =
+    document.querySelectorAll(".project-image img");
+
+const imagePopup =
+    document.getElementById("imagePopup");
+
+const popupImage =
+    document.getElementById("popupImage");
+
+const popupClose =
+    document.getElementById("popupClose");
+
+
+projectImages.forEach(function(image) {
+
+    image.addEventListener("click", function() {
+
+        popupImage.src = this.src;
+
+        popupImage.alt = this.alt;
+
+        imagePopup.classList.add("active");
+
+    });
+
+});
+
+
+/* Close button */
+
+popupClose.addEventListener("click", function() {
+
+    imagePopup.classList.remove("active");
+
+});
+
+
+/* Click outside image */
+
+imagePopup.addEventListener("click", function(event) {
+
+    if (event.target === imagePopup) {
+
+        imagePopup.classList.remove("active");
+
+    }
+
+});
+
+
+/* ESC key */
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+
+        imagePopup.classList.remove("active");
+
+    }
+
+});
