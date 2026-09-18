@@ -327,9 +327,9 @@ border: 2px solid #ee8122;
 ========================= */
 
 .hero-image {
-    width: 285px;
+    width: 350px;
 
-    height: 285px;
+    height: 350px;
 
     flex-shrink: 0;
 
@@ -367,9 +367,9 @@ border: 2px solid #ee8122;
 .hero-image img {
     position: relative;
 
-    width: 255px;
+    width: 335px;
 
-    height: 255px;
+    height: 335px;
 
     object-fit: cover;
 
