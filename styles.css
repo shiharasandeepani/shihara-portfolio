@@ -500,28 +500,32 @@ img {
 }
 
 
+
 /* =========================
    SKILLS
 ========================= */
 
-.skills-container {
+.skills-categories {
     display: grid;
 
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
-    gap: 15px;
+    gap: 20px;
 }
 
-.skill-card {
+
+/* =========================
+   CATEGORY CARD
+========================= */
+
+.skill-category-card {
     background: var(--card);
 
     border: 1px solid var(--border);
 
-    border-radius: 12px;
+    border-radius: 14px;
 
-    padding: 20px 15px;
-
-    text-align: center;
+    padding: 22px;
 
     transition: 0.3s ease;
 
@@ -529,7 +533,8 @@ img {
         0 10px 30px rgba(0, 0, 0, 0.20);
 }
 
-.skill-card:hover {
+
+.skill-category-card:hover {
     transform: translateY(-5px);
 
     background: var(--card-hover);
@@ -537,15 +542,31 @@ img {
     border-color: orange;
 
     box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.22);
+        0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
-.skill-icon {
+
+/* =========================
+   CATEGORY HEADING
+========================= */
+
+.category-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 20px;
+}
+
+
+.category-icon {
     width: 46px;
 
     height: 46px;
 
-    margin: 0 auto 9px;
+    flex-shrink: 0;
 
     display: flex;
 
@@ -558,31 +579,128 @@ img {
     background: rgba(255, 255, 255, 0.04);
 
     border: 1px solid rgba(255, 255, 255, 0.06);
-
-    transition: 0.3s ease;
 }
 
-.skill-icon i {
-    font-size: 29px;
+
+.category-icon i {
+    font-size: 20px;
+
+    color: #60a5fa;
 }
 
-.skill-card:hover .skill-icon {
-    transform: scale(1.06);
 
-    border-color: rgba(96, 165, 250, 0.35);
+.category-heading h3 {
+    font-size: 17px;
+
+    margin-bottom: 3px;
 }
 
-.skill-card h3 {
-    font-size: 15px;
 
-    margin-bottom: 2px;
-}
-
-.skill-card p {
+.category-heading p {
     color: var(--text-muted);
 
     font-size: 12px;
 }
+
+
+/* =========================
+   SKILL LIST
+========================= */
+
+.skill-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+/* =========================
+   INDIVIDUAL SKILL
+========================= */
+
+.skill-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 9px 13px;
+
+    border-radius: 9px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    transition: 0.3s ease;
+}
+
+
+.skill-item:hover {
+    border-color: rgba(96, 165, 250, 0.4);
+
+    transform: translateY(-2px);
+}
+
+
+.skill-item i {
+    font-size: 19px;
+}
+
+
+.skill-item span {
+    font-size: 13px;
+
+    color: var(--text);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+    .skills-categories {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    .skill-category-card {
+        padding: 18px;
+    }
+
+    .category-heading {
+        gap: 11px;
+
+        margin-bottom: 16px;
+    }
+
+    .category-heading h3 {
+        font-size: 15px;
+    }
+
+    .skill-item {
+        padding: 8px 11px;
+    }
+
+    .skill-item span {
+        font-size: 12px;
+    }
+
+}
+
 
 
 /* =========================
