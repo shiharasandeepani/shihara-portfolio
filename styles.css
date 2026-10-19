@@ -1,6 +1,4 @@
-/* =========================
-   GLOBAL
-========================= */
+
 
 * {
     margin: 0;
@@ -50,9 +48,7 @@ img {
 }
 
 
-/* =========================
-   HEADER
-========================= */
+
 
 .header {
     position: sticky;
@@ -111,9 +107,7 @@ img {
 }
 
 
-/* =========================
-   TYPING TEXT
-========================= */
+
 
 .typing-text {
     color: orange;
@@ -130,9 +124,7 @@ img {
 }
 
 
-/* =========================
-   MENU
-========================= */
+
 
 .menu-toggle {
     display: none;
@@ -181,9 +173,6 @@ img {
 }
 
 
-/* =========================
-   HERO
-========================= */
 
 .hero {
     max-width: 1200px;
@@ -327,9 +316,6 @@ img {
 }
 
 
-/* =========================
-   PROFILE PHOTO
-========================= */
 
 .hero-image {
     width: 350px;
@@ -388,9 +374,7 @@ img {
 }
 
 
-/* =========================
-   SECTION
-========================= */
+
 
 .section {
     max-width: 1200px;
@@ -447,9 +431,7 @@ img {
 }
 
 
-/* =========================
-   ABOUT
-========================= */
+
 
 .about-container {
     max-width: 850px;
@@ -501,9 +483,7 @@ img {
 
 
 
-/* =========================
-   SKILLS
-========================= */
+
 
 .skills-categories {
     display: grid;
@@ -514,9 +494,6 @@ img {
 }
 
 
-/* =========================
-   CATEGORY CARD
-========================= */
 
 .skill-category-card {
     background: var(--card);
@@ -546,9 +523,7 @@ img {
 }
 
 
-/* =========================
-   CATEGORY HEADING
-========================= */
+
 
 .category-heading {
     display: flex;
@@ -603,9 +578,7 @@ img {
 }
 
 
-/* =========================
-   SKILL LIST
-========================= */
+
 
 .skill-list {
     display: flex;
@@ -616,9 +589,7 @@ img {
 }
 
 
-/* =========================
-   INDIVIDUAL SKILL
-========================= */
+
 
 .skill-item {
     display: flex;
@@ -658,9 +629,7 @@ img {
 }
 
 
-/* =========================
-   TABLET
-========================= */
+
 
 @media (max-width: 800px) {
 
@@ -671,9 +640,7 @@ img {
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+
 
 @media (max-width: 500px) {
 
@@ -702,10 +669,6 @@ img {
 }
 
 
-
-/* =========================
-   PROJECTS
-========================= */
 
 .projects-container {
     display: grid;
@@ -772,9 +735,7 @@ img {
 }
 
 
-/* =========================
-   PROJECT IMAGE
-========================= */
+
 
 .project-image {
     position: relative;
@@ -807,9 +768,6 @@ img {
 }
 
 
-/* =========================
-   IMAGE HOVER
-========================= */
 
 .project-image .image-default {
     position: absolute;
@@ -838,9 +796,7 @@ img {
 }
 
 
-/* =========================
-   PROJECT CONTENT
-========================= */
+
 
 .project-card h3 {
     font-size: 18px;
@@ -913,13 +869,6 @@ img {
 }
 
 
-/* =========================
-   IMAGE GALLERY POPUP
-========================= */
-
-/* =========================
-   PROJECT IMAGE POPUP
-========================= */
 
 .image-popup {
     display: none;
@@ -959,7 +908,6 @@ img {
 }
 
 
-/* Close button */
 
 .popup-close {
     position: absolute;
@@ -983,7 +931,6 @@ img {
 }
 
 
-/* Previous / Next */
 
 .popup-prev,
 .popup-next {
@@ -1030,7 +977,6 @@ img {
 }
 
 
-/* Mobile */
 
 @media (max-width: 650px) {
 
@@ -1041,9 +987,6 @@ img {
 
 }
 
-/* =========================
-   CERTIFICATES
-========================= */
 
 .certificate-card {
     min-height: 190px;
@@ -1073,10 +1016,6 @@ img {
     margin-top: 3px;
 }
 
-
-/* =========================
-   EDUCATION
-========================= */
 
 .education-container {
     max-width: 850px;
@@ -1182,9 +1121,43 @@ img {
 }
 
 
-/* =========================
-   CONTACT
-========================= */
+.contact-form {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background: #474545;
+    color: white;
+    font-family: inherit;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+    border-color: orange
+}
+;
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    cursor: pointer;
+}
+
+#formMessage {
+    text-align: center;
+    color: #4ade80;
+}
+
 
 .contact-intro {
     max-width: 600px;
@@ -1272,9 +1245,7 @@ img {
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+
 
 .footer {
     padding: 22px 30px;
@@ -1295,9 +1266,7 @@ img {
 }
 
 
-/* =========================
-   TABLET
-========================= */
+
 
 @media (max-width: 900px) {
 
@@ -1365,9 +1334,7 @@ img {
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+
 
 @media (max-width: 650px) {
 
@@ -1509,7 +1476,6 @@ img {
     }
 
 
-    /* POPUP */
 
     .image-popup {
         width: 90vw;
@@ -1549,9 +1515,6 @@ img {
 }
 
 
-/* =========================
-   SMALL MOBILE
-========================= */
 
 @media (max-width: 400px) {
 

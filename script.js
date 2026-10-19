@@ -1,6 +1,4 @@
-// =========================
-// MOBILE MENU
-// =========================
+
 
 const menuToggle = document.getElementById("menuToggle");
 const mobileNav = document.getElementById("mobileNav");
@@ -28,7 +26,6 @@ if (menuToggle && mobileNav) {
     });
 
 
-    // Close mobile menu after clicking link
 
     document.querySelectorAll(".mobile-nav a").forEach(function(link) {
 
@@ -47,9 +44,7 @@ if (menuToggle && mobileNav) {
 
 
 
-// =========================
-// TYPING TEXT
-// =========================
+
 
 const texts = [
     "Web Development Enthusiast",
@@ -73,7 +68,6 @@ function typeText() {
     const currentText = texts[textIndex];
 
 
-    // Typing
 
     if (!isDeleting) {
 
@@ -83,7 +77,6 @@ function typeText() {
         charIndex++;
 
 
-        // Finished typing
 
         if (charIndex === currentText.length) {
 
@@ -98,7 +91,7 @@ function typeText() {
     }
 
 
-    // Deleting
+    
 
     else {
 
@@ -108,7 +101,6 @@ function typeText() {
         charIndex--;
 
 
-        // Finished deleting
 
         if (charIndex === 0) {
 
@@ -134,9 +126,7 @@ typeText();
 
 
 
-// =========================
-// IMAGE GALLERY
-// =========================
+
 
 const popup = document.getElementById("imagePopup");
 const popupImg = document.getElementById("popupImage");
@@ -151,7 +141,6 @@ let index = 0;
 let activeCard = null;
 
 
-// All project images
 const projectImages = document.querySelectorAll(".project-image img");
 
 
@@ -159,42 +148,32 @@ projectImages.forEach(function(img) {
 
     img.addEventListener("click", function() {
 
-        // Get clicked project card
         activeCard = this.closest(".project-card");
 
-        // Get gallery name
         const gallery = this.getAttribute("data-gallery");
 
-        // Get all images belonging to same project
         images = Array.from(
             document.querySelectorAll(
                 '.project-image img[data-gallery="' + gallery + '"]'
             )
         );
 
-        // Current image
         index = images.indexOf(this);
 
-        // Show selected image
         popupImg.src = this.src;
         popupImg.alt = this.alt;
 
-        // Position popup over the clicked card
         positionPopup();
 
-        // Show popup
         popup.classList.add("active");
 
-        // Update arrows
         updateButtons();
     });
 
 });
 
 
-// =========================
-// POSITION POPUP OVER CARD
-// =========================
+
 
 function positionPopup() {
 
@@ -205,13 +184,11 @@ function positionPopup() {
     const popupWidth = popup.offsetWidth || 360;
     const popupHeight = popup.offsetHeight || 250;
 
-    // Center of the selected card
     let left = card.left + (card.width / 2);
 
     let top = card.top + (card.height / 2);
 
 
-    // Prevent popup from going outside screen horizontally
     const halfWidth = popupWidth / 2;
 
     if (left - halfWidth < 10) {
@@ -223,7 +200,6 @@ function positionPopup() {
     }
 
 
-    // Prevent popup from going outside screen vertically
     const halfHeight = popupHeight / 2;
 
     if (top - halfHeight < 10) {
@@ -242,9 +218,6 @@ function positionPopup() {
 }
 
 
-// =========================
-// SHOW IMAGE
-// =========================
 
 function showImage() {
 
@@ -257,9 +230,7 @@ function showImage() {
 }
 
 
-// =========================
-// UPDATE ARROWS
-// =========================
+
 
 function updateButtons() {
 
@@ -277,9 +248,7 @@ function updateButtons() {
 }
 
 
-// =========================
-// NEXT
-// =========================
+
 
 nextBtn.addEventListener("click", function(e) {
 
@@ -296,9 +265,6 @@ nextBtn.addEventListener("click", function(e) {
 });
 
 
-// =========================
-// PREVIOUS
-// =========================
 
 prevBtn.addEventListener("click", function(e) {
 
@@ -315,9 +281,7 @@ prevBtn.addEventListener("click", function(e) {
 });
 
 
-// =========================
-// CLOSE
-// =========================
+
 
 closeBtn.addEventListener("click", function(e) {
 
@@ -330,9 +294,7 @@ closeBtn.addEventListener("click", function(e) {
 });
 
 
-// =========================
-// CLICK OUTSIDE
-// =========================
+
 
 popup.addEventListener("click", function(e) {
 
@@ -347,9 +309,7 @@ popup.addEventListener("click", function(e) {
 });
 
 
-// =========================
-// ESC KEY
-// =========================
+
 
 document.addEventListener("keydown", function(e) {
 
@@ -377,10 +337,7 @@ document.addEventListener("keydown", function(e) {
 });
 
 
-// =========================
-// KEEP POPUP OVER CARD
-// WHEN SCREEN CHANGES
-// =========================
+
 
 window.addEventListener("resize", function() {
 
@@ -397,3 +354,4 @@ window.addEventListener("scroll", function() {
     }
 
 });
+

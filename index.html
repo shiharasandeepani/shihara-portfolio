@@ -13,25 +13,23 @@
     <link rel="stylesheet" href="styles.css">
 
 
-    <!-- Google Font -->
 
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
 
-    <!-- Font Awesome -->
 
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
-    <!-- Devicon -->
 
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
 
 </head>
 
@@ -39,9 +37,7 @@
 <body>
 
 
-<!-- =========================
-     NAVBAR
-========================= -->
+
 
 <header class="header">
 
@@ -52,7 +48,6 @@
         </a>
 
 
-        <!-- Desktop Navigation -->
 
         <ul class="nav-links">
 
@@ -87,7 +82,6 @@
         </ul>
 
 
-        <!-- Mobile Menu Button -->
 
         <button
             class="menu-toggle"
@@ -100,8 +94,6 @@
 
     </nav>
 
-
-    <!-- Mobile Navigation -->
 
     <ul class="mobile-nav" id="mobileNav">
 
@@ -139,9 +131,7 @@
 
 
 
-<!-- =========================
-     HERO
-========================= -->
+
 
 <section id="home" class="hero">
 
@@ -157,11 +147,11 @@
         </h1>
 
 
-        <h2>
-           HNDIT Student |<p  class="typing-text">
-                          <span id="typing"></span>
-                          </p>      
-         </h2>
+        <h2>HNDIT Student |</h2>
+
+            <p class="typing-text">
+              <span id="typing"></span>
+            </p>
 
 
         <p class="hero-description">
@@ -215,9 +205,6 @@
     </div>
 
 
-
-    <!-- PROFILE PHOTO -->
-
     <div class="hero-image">
 
         <img
@@ -229,10 +216,6 @@
 </section>
 
 
-
-<!-- =========================
-     ABOUT
-========================= -->
 
 <section id="about" class="section">
 
@@ -311,7 +294,6 @@
     <div class="skills-categories">
 
 
-        <!-- FRONTEND -->
         <div class="skill-category-card">
 
             <div class="category-heading">
@@ -348,7 +330,6 @@
         </div>
 
 
-        <!-- BACKEND -->
         <div class="skill-category-card">
 
             <div class="category-heading">
@@ -375,7 +356,6 @@
         </div>
 
 
-        <!-- DATABASE -->
         <div class="skill-category-card">
 
             <div class="category-heading">
@@ -402,7 +382,6 @@
         </div>
 
 
-        <!-- PROGRAMMING -->
         <div class="skill-category-card">
 
             <div class="category-heading">
@@ -439,7 +418,6 @@
         </div>
 
 
-        <!-- TOOLS -->
         <div class="skill-category-card">
 
             <div class="category-heading">
@@ -488,11 +466,6 @@
 
 
 
-
-<!-- =========================
-     PROJECTS
-========================= -->
-
 <section id="projects" class="section">
 
     <div class="section-title">
@@ -509,7 +482,6 @@
     <div class="projects-container">
 
 
-        <!-- ================= PROJECT 01 ================= -->
 
         <div class="project-card">
 
@@ -618,7 +590,6 @@
 
 
 
-        <!-- ================= PROJECT 02 ================= -->
 
         <div class="project-card">
 
@@ -691,7 +662,6 @@
 
 
 
-        <!-- ================= PROJECT 03 ================= -->
 
         <div class="project-card">
 
@@ -759,9 +729,7 @@
 
 
 
-<!-- =========================
-     CERTIFICATES
-========================= -->
+
 
 <section id="certificates" class="section dark-section">
 
@@ -779,7 +747,6 @@
     <div class="projects-container">
 
 
-        <!-- CERTIFICATE 01 -->
 
         <div class="project-card certificate-card">
 
@@ -818,7 +785,6 @@
 
 
 
-        <!-- CERTIFICATE 02 -->
 
         <div class="project-card certificate-card">
 
@@ -857,7 +823,6 @@
 
 
 
-        <!-- CERTIFICATE 03 -->
 
         <div class="project-card certificate-card">
 
@@ -900,9 +865,7 @@
 
 
 
-<!-- =========================
-     EDUCATION
-========================= -->
+
 
 <section id="education" class="section">
 
@@ -951,8 +914,13 @@
 
 
                 <span class="education-year">
-                    2024 – Present
+                     2024 – 2026
                 </span>
+
+                <p>
+                      Academic Component Completed |
+                      Industrial Training Pending
+                </p>
 
             </div>
 
@@ -1000,9 +968,6 @@
 
 
 
-<!-- =========================
-     CONTACT
-========================= -->
 
 <section id="contact" class="section dark-section">
 
@@ -1024,11 +989,54 @@
 
     </p>
 
+    
+<form
+    id="contactForm"
+    class="contact-form"
+    action="https://formsubmit.co/shiharasandeepani@gmail.com"
+    method="POST">
+
+    <input
+        type="hidden"
+        name="_subject"
+        value="New Message from My Portfolio">
+
+    <input
+        type="hidden"
+        name="_template"
+        value="table">
+
+    <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Your Name"
+        required>
+
+    <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Your Email"
+        required>
+
+    <textarea
+        name="message"
+        id="message"
+        placeholder="Your Message"
+        rows="5"
+        required></textarea>
+
+    <button type="submit" class="btn primary-btn">
+        Send Message
+    </button>
+
+</form>
+
 
     <div class="contact-container">
 
 
-        <!-- EMAIL -->
 
         <div class="contact-card">
 
@@ -1056,7 +1064,6 @@
 
 
 
-        <!-- WHATSAPP -->
 
         <div class="contact-card">
 
@@ -1084,7 +1091,6 @@
 
 
 
-        <!-- GITHUB -->
 
         <div class="contact-card">
 
@@ -1112,7 +1118,6 @@
 
 
 
-        <!-- LINKEDIN -->
 
         <div class="contact-card">
 
@@ -1144,9 +1149,7 @@
 
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+
 
 <footer class="footer">
 
@@ -1162,16 +1165,12 @@
 
 
 
-<!-- =========================
-     IMAGE GALLERY POPUP
-========================= -->
 
 <div
     class="image-popup"
     id="imagePopup">
 
 
-    <!-- CLOSE -->
 
     <span
         class="popup-close"
@@ -1182,7 +1181,6 @@
     </span>
 
 
-    <!-- PREVIOUS -->
 
     <button
         class="popup-prev"
@@ -1194,7 +1192,6 @@
     </button>
 
 
-    <!-- IMAGE -->
 
     <img
         id="popupImage"
@@ -1202,7 +1199,6 @@
         alt="Project Image">
 
 
-    <!-- NEXT -->
 
     <button
         class="popup-next"
